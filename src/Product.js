@@ -14,6 +14,7 @@ function Product({id,title,price,image}) {
                 title:title,
                 price:price,
                 image : image,
+                quantity:1,
             }
         });
     }

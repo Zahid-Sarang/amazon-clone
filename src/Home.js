@@ -36,7 +36,7 @@ function Home() {
                   price={50000}
                   image="https://m.media-amazon.com/images/I/81hoonPUdxL._SL1500_.jpg"
                   />
-               <Product 
+               <Product
                   id="06"
                   title="2020 Apple MacBook Pro"
                   price={120000}
@@ -50,6 +50,7 @@ function Home() {
                   title="Mi 80 cm (32 inches) HD"
                   price={160000}
                   image="https://m.media-amazon.com/images/I/71Z+l05eSIS._SL1188_.jpg"
+                  
                   />
                 </div>
             </div>
