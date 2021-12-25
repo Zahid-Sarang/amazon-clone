@@ -1,0 +1,14 @@
+.login{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+}
+
+.login__logo{
+    margin: 15px;
+    height: 100px;
+    width:200px;
+    object-fit: contain;
+}
