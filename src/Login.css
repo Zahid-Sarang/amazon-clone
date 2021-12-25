@@ -12,3 +12,63 @@
     width:200px;
     object-fit: contain;
 }
+
+.login__container{
+    width: 300px;
+    height: fit-content;
+    background: white;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   
+}
+
+.login__container h1{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.login__container h5{
+    margin-bottom: 5px;
+}
+.login__container input{
+    margin-bottom: 10px;
+    height: 30px;
+    width: 98%;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 6px;
+    border: none;
+}
+.login__container ::placeholder{
+    padding-left: 10px;
+    color: rgb(224,224,224);
+}
+
+.login__container p{
+    margin-top:15px ;
+    font-size: 12px;
+}
+
+.login__sign-in{
+    background-color:#f0c14b ;
+    border-radius: 6px;
+    width: 100%;
+    height: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: none;
+    margin-top: 20px;
+    
+}
+.login__sign-up{
+    background-color:#f0c14b ;
+    border-radius: 6px;
+    width: 100%;
+    height: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: none;
+    margin-top: 20px;
+
+}
