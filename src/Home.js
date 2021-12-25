@@ -37,7 +37,7 @@ function Home() {
                   image="https://m.media-amazon.com/images/I/81hoonPUdxL._SL1500_.jpg"
                   />
                <Product
-                  id="06"
+                  id="05"
                   title="2020 Apple MacBook Pro"
                   price={120000}
                   image="https://m.media-amazon.com/images/I/71HCR-N2O2L._SL1500_.jpg"
