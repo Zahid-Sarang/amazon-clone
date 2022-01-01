@@ -60,15 +60,22 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border: none;
     margin-top: 20px;
-    
+    cursor:pointer;
 }
+
 .login__sign-up{
     background-color:#f0c14b ;
     border-radius: 6px;
     width: 100%;
     height: 30px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(114, 109, 109, 0.35) 0px 5px 15px;
     border: none;
     margin-top: 20px;
+    cursor:pointer;
+}
 
+.login__sign-up:hover,.login__sign-in:hover{
+    background: white;
+    color: black;
+    box-shadow: black  0px 5px 15px;
 }
