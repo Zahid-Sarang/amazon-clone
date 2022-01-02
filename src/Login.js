@@ -10,6 +10,16 @@ const Login = () => {
 
   const signIn = (e) => {
     e.preventDefault();
+
+     auth
+         .signInWithEmailAndPassword(email,password)
+         .then((auth) => {
+          if(auth) {
+            history.push('/')
+          }
+        })
+         .catch((error) => alert(error.message))
+
   };
 
   const register = (e) => {
@@ -17,9 +27,12 @@ const Login = () => {
     auth
         .createUserWithEmailAndPassword(email, password)
         .then((auth) => {
-          console.log(auth)
+          if(auth) {
+            history.push('/')
+          }
         })
-        .catch(error => alert(error.message))
+        .catch((error) => alert(error.message))
+        
   };
 
   return (
