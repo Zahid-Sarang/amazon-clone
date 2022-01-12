@@ -5,7 +5,7 @@ export const initialState = {
 
 //Selector
 export const getCartTotal = (cart) => 
-    cart?.reduce((amount, item)=> amount + item.price, 0);
+    cart?.reduce((amount, item)=> (amount + item.price * item.quantity), 0);
 
 const reducer = (state,action) => {
     console.log(action);

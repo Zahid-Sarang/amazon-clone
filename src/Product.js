@@ -2,7 +2,7 @@ import React from 'react';
 import './Product.css';
 import { useStateValue } from './StateProvider';
 
-function Product({id,title,price,image}) {
+function Product({id,title,price,image,quantity}) {
     const [{cart},dispatch] = useStateValue();
     console.log("Inside cart",cart)
      
@@ -14,7 +14,7 @@ function Product({id,title,price,image}) {
                 title:title,
                 price:price,
                 image : image,
-                quantity:1,
+                quantity:quantity,
             }
         });
     }
