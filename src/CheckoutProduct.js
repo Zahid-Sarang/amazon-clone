@@ -1,33 +1,54 @@
-import React from 'react'
+import React from "react";
 import './CheckoutProduct.css'
-import { useStateValue } from './StateProvider';
+import { useStateValue } from "./StateProvider";
+
+const CartItem = ({id, title, price, image, quantity }) => {
+  const [{cart},dispatch] = useStateValue();
+  
+   const increment = (id) => {
+      return dispatch ({
+       type: "INCREMENT",
+       payload: id
+     });
+   }
+
+   const decrement = (id) => {
+    return dispatch ({
+     type: "DECREMENT",
+     payload: id
+   });
+ }
 
 
-const CheckoutProduct = ({id,title,price,image}) => { 
-    const [{cart,user},dispatch] = useStateValue();
-
-    const removeFromCart = (id) => {
-         return dispatch ({
-              type: "REMOVE_FROM_CART",
-              payload: id,
-          })
-    }
-    return (
-        <div className="checkoutProduct">
-        <img className="checkoutProduct__Image" src={image}/>
-
-        <div className='checkoutProduct__info'>
-            <p className='checkoutProduct__title'>{title}</p>
-            <p className='checkoutProduct__price'>
-                <bold>₹</bold>
-                <strong>{price}</strong>
-            </p>
-            <button className='checkoutProduct__button' onClick={() => removeFromCart(id)}>Remove From Cart</button>
-        </div>
-        
-            
-        </div>
-    )
+ const removetoCart = (id) => {
+  return dispatch ({
+   type: "REMOVE_FROM_CART",
+   payload: id
+ });
 }
 
-export default CheckoutProduct
+
+
+  return (
+    <div className="cartItem">
+      <div className="cartItem__info">
+        <p>{title}</p>
+
+        <p className="cartItem__price">
+          <bold>₹</bold>
+          <strong>{price}</strong>
+        </p>
+        <img className="cartItem__image" src={image} alt="" />
+        <div className="add-minus-quantity">
+          <i className="fas fa-minus minus" onClick={() => decrement(id)}></i>
+          <input type="text" placeholder={quantity} />
+          <i className="fas fa-plus add" onClick={() => increment(id)}></i>
+        </div>
+        <button className="cartItem__button" onClick={() => removetoCart(id)}>Remove to cart</button>
+      </div>
+     
+    </div>
+  );
+};
+
+export default CartItem;

@@ -9,8 +9,15 @@
 .login__logo{
     margin: 15px;
     height: 100px;
-    width:200px;
+    font-weight: 900;
+    width:100%;
     object-fit: contain;
+    font-size: 4rem;
+    text-decoration: none;
+    font-family: 'The Nautigal', cursive;
+    background: linear-gradient(to right, #fc466b, #3f5efb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .login__container{
